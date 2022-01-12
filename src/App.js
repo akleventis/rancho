@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import './App.css';
-// import golf_ball from './Images/golf_ball.png';
 import Main from './Home.js'
 import Calendar from './Calendar.js'
 import Spreadsheet from './Spreadsheet';
