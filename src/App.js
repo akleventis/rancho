@@ -1,23 +1,41 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+// import golf_ball from './Images/golf_ball.png';
+import Main from './Home.js'
+import Calendar from './Calendar.js'
+import Spreadsheet from './Spreadsheet';
 
 function App() {
+  const [iframe, setiframe] = useState(Main)
+
+  const calendar = () => {
+    setiframe(Calendar)
+  }
+  const home = () => {
+    setiframe(Main)
+  }
+  const spreadsheet = () => {
+    setiframe(Spreadsheet)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="heading" id="heading">
+        <h3>Rancho Maria Mens Club</h3>
+         <div className="nav-container">
+            <p>
+              <h4 onClick={calendar}>Calendar</h4>
+            </p>
+            <p>
+              <h4 onClick={home}>Home Page</h4>
+            </p>
+            <p>
+              <h4 onClick={spreadsheet}>Spreadsheet</h4>
+            </p>
+          </div> 
+      </div>
+      <div className='frame'>
+          {iframe}
+      </div>
     </div>
   );
 }
