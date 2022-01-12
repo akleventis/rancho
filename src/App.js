@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <div className="heading" id="heading">
-        <h3>Rancho Maria Mens Club</h3>
+        <h3>Rancho Maria Mens Club ⛳️</h3>
          <div className="nav-container">
             <p>
               <h4 onClick={calendar}>Calendar</h4>
