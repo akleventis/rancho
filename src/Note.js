@@ -1,4 +1,4 @@
-const Home = () => {
+const Note = () => {
   return (
 <div className="doc-container">
       <iframe
@@ -10,4 +10,4 @@ const Home = () => {
     </div>
   );
 };
-export default Home;
+export default Note;

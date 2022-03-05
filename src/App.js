@@ -1,17 +1,17 @@
 import { useState } from 'react';
 import './App.css';
-import Main from './Home.js'
+import Note from './Note.js'
 import Calendar from './Calendar.js'
 import Spreadsheet from './Spreadsheet';
 
 function App() {
-  const [iframe, setiframe] = useState(Main)
+  const [iframe, setiframe] = useState(Calendar)
 
   const calendar = () => {
     setiframe(Calendar)
   }
-  const home = () => {
-    setiframe(Main)
+  const note = () => {
+    setiframe(Note)
   }
   const spreadsheet = () => {
     setiframe(Spreadsheet)
@@ -22,13 +22,13 @@ function App() {
         <h3>Rancho Maria Mens Club ⛳️</h3>
          <div className="nav-container">
             <p>
+              <h4 onClick={spreadsheet}>Spreadsheet</h4>
+            </p>
+            <p>
               <h4 onClick={calendar}>Calendar</h4>
             </p>
             <p>
-              <h4 onClick={home}>Home Page</h4>
-            </p>
-            <p>
-              <h4 onClick={spreadsheet}>Spreadsheet</h4>
+              <h4 onClick={note}>Presidents Note</h4>
             </p>
           </div> 
       </div>
