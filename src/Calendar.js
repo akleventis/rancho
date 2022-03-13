@@ -4,7 +4,7 @@ const Calendar = () => {
       <iframe
         src="https://docs.google.com/document/d/e/2PACX-1vTKf6dtwiOp87jql0PvFRAEknbYlGRZytqyliH8la_Ntco_-TYJpwwyxbnvZq6S8Eg7ZYyGj4Cs69AY/pub?embedded=true"
         title="Calendar"
-        class="doc"
+        className="doc"
         frameBorder="0"
       ></iframe>
     </div>

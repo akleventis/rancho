@@ -21,15 +21,15 @@ function App() {
       <div className="heading" id="heading">
         <h3>Rancho Maria Mens Club ⛳️</h3>
          <div className="nav-container">
-            <p>
+            <>
               <h4 onClick={spreadsheet}>Spreadsheet</h4>
-            </p>
-            <p>
+            </>
+            <>
               <h4 onClick={calendar}>Calendar</h4>
-            </p>
-            <p>
+            </>
+            <>
               <h4 onClick={note}>Presidents Note</h4>
-            </p>
+            </>
           </div> 
       </div>
       <div className='frame'>
