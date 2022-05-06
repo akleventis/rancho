@@ -7,15 +7,10 @@ import Spreadsheet from './Spreadsheet';
 function App() {
   const [iframe, setiframe] = useState(Calendar)
 
-  const calendar = () => {
-    setiframe(Calendar)
-  }
-  const note = () => {
-    setiframe(Note)
-  }
-  const spreadsheet = () => {
-    setiframe(Spreadsheet)
-  }
+  const calendar = () => { setiframe(Calendar) }
+  const note = () => { setiframe(Note) }
+  const spreadsheet = () => { setiframe(Spreadsheet) }
+
   return (
     <div className="App">
       <div className="heading" id="heading">
@@ -35,6 +30,9 @@ function App() {
       <div className='frame'>
           {iframe}
       </div>
+      <footer>
+        <p>© rmcc 2022</p>
+      </footer>
     </div>
   );
 }
